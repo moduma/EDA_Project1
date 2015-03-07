@@ -8,7 +8,7 @@ projData <- fread("household_power_consumption.txt",sep=";",na.strings="?",
 #This covers the days 01Feb2007 to 02Feb2007
 reqData<-projData[66637:69516,];
 
-#Plot1
+#Plot3
 #Create png file at the working directory
 png("./plot3.png",width = 480, height = 480, units = "px");
 plot(strptime(paste(reqData$Date,reqData$Time),"%d/%m/%Y %H:%M:%S"),
